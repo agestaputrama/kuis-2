@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Vue Js</title>
+</head>
+<body>
+    <div id="app">
+       <input type="text" v-model="content" >
+       <!-- Maaf Saya tidak paham cara mengganti fungsi "addUpdate" dengan "addUser" -->
+       <!-- Untuk mencoba fungsi addUser, ganti @click="addUser" -->
+       <!-- Untuk mencoba fungsi updateUser, gamti @click="updateUser" -->
+            <button @click="addUser">{{button}}</button>
+            <ul>
+                <li v-for="(u, index) in users"><p>{{u.name}} || <button @click="editUser(index)">Edit</button> || <button @click="deleteUser(index)">Delete</button></p></li> 
+            </ul>
+    </div>
+    
+    <script src="assets/vendor/vue.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
